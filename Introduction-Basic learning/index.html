@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <script>
+        document.addEventListener("click",function click(){
+            console.log("clicked")
+            // alert("hello")
+            let confirmation=confirm("Are you sure?");
+            console.log(confirmation)
+        })
+        // Get the current date and time-------------------//
+        const date=new Date();
+        const day=date.getDate();
+        const month=date.getMonth();
+        const year=date.getFullYear();
+        const fulldate=`${day}-${month}-${year}`
+        console.log(`${fulldate}`)
+        //------------------------------------------------//
+    </script>
+</body>
+</html>
